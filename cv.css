@@ -1,0 +1,93 @@
+/* Lavender & White CV Theme using tables */
+
+/* Colors */
+:root {
+  --bg: #f8f7ff;          /* light lavender */
+  --card: #ffffff;        /* white cards */
+  --accent: #9b87f5;      /* main lavender */
+  --accent2: #7c3aed;     /* darker purple */
+  --muted: #6b7280;       /* gray */
+  --radius: 14px;
+  --max-width: 850px;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #ede9fe 100%);
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+/* Main CV table */
+.resume {
+  max-width: var(--max-width);
+  width: 100%;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+  border: 2px solid var(--accent);
+  padding: 20px;
+}
+.cv-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cv-table td {
+  padding: 14px;
+  vertical-align: top;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 20px;
+  border-radius: var(--radius);
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  color: #fff;
+}
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.sub {
+  margin-top: 6px;
+  font-size: 1rem;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--accent2);
+  border-left: 4px solid var(--accent);
+  padding-left: 8px;
+}
+
+/* Skills Table */
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+.skills-table td {
+  border: 1px solid #ddd6fe;
+  padding: 10px;
+  border-radius: 6px;
+  background: #f3f0ff;
+  width: 50%;
+}
+.skills-table strong {
+  color: var(--accent);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding-top: 10px;
+  border-top: 1px solid #e5e7eb;
+}
