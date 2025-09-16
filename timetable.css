@@ -1,0 +1,25 @@
+/* File: styles.css */
+:root{
+  --accent:#222;
+  --muted:#666;
+  --border:#ddd;
+}
+*{box-sizing:border-box}
+body{font-family:Segoe UI, Roboto, Arial, sans-serif;background:#f6f7f9;padding:28px}
+.container{max-width:1100px;margin:0 auto;background:#fff;padding:22px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.title{text-align:center;margin:4px 0 18px;font-size:22px;letter-spacing:1px}
+.table-wrap{overflow:auto}
+.timetable{width:100%;border-collapse:collapse;min-width:900px}
+.timetable th, .timetable td{border:1px solid var(--border);padding:10px;vertical-align:top}
+.timetable thead th{background:#fafafa;padding:12px;text-align:center;font-weight:700}
+.day-col{width:90px;background:#f3f6fb;text-align:center;font-weight:700}
+.cell-title{font-weight:600;margin-bottom:6px}
+.cell-sub{font-size:13px;color:var(--muted)}
+.code{font-size:12px;color:#444;margin-top:6px}
+.empty{background:#fafafa}
+.footer{text-align:right;color:var(--muted);font-size:13px;margin-top:12px}
+
+@media (max-width:720px){
+  .timetable{min-width:640px}
+  .title{font-size:18px}
+}
